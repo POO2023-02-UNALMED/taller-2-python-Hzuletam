@@ -47,5 +47,5 @@ class Auto:
     if self.motor.registro == self.registro and all(self.registro == asiento.registro for asiento in self.asientos]:
       return print('Auto original')
     else:
-      return print('Las piezas no son originales'
+      return print('Las piezas no son originales')
     
