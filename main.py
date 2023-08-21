@@ -32,13 +32,14 @@ class Auto:
   
   cantidadCreados = 0
   
-  def __init__(self,modelo, precio, asientos,marca,motor,registro,cantidadCreados):
+  def __init__(self,modelo, precio, asientos,marca,motor,registro):
     self.modelo = modelo
     self.precio = precio
     self.asientos = [x for x in asientos if type(x) == type(Asiento())]
     self.marca = marca
     self.motor = motor
     self.registro = registro
+    self.cantidadCreados+=1
     
   def cantidadAsientos(self):
     return len(self.asientos)
