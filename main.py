@@ -19,7 +19,7 @@ class Motor:
     self.registro = registro
     
   def cambiarRegistro(self, registro):
-    if registro.isnumeric():  
+    if isnumeric(registro):  
       self.registro = registro
       
   def asignarTipo(self,tipo):
@@ -35,7 +35,7 @@ class Auto:
   def __init__(self,modelo, precio, asientos,marca,motor,registro):
     self.modelo = modelo
     self.precio = precio
-    self.asientos = [x for x in asientos if type(x) == type(Asiento())]
+    self.asientos = [x for x in asientos if type(x) == type(Asiento('negro',200,415))]
     self.marca = marca
     self.motor = motor
     self.registro = registro
